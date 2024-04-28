@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-file-suggestion-component",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Provides a popover fuzzy file and folder search helper for input fields in Obsidian.",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
