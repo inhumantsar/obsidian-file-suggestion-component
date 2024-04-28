@@ -15,12 +15,7 @@
     "importHelpers": true,
     "esModuleInterop": true,
     "baseUrl": "./src",
-    "paths": {
-      "src": [
-        "src/*",
-        "tests/*"
-      ]
-    },
+    "declaration": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "resolveJsonModule": true,
@@ -33,9 +28,10 @@
   },
   "include": [
     "src/**/*",
-    "test/**/*",
   ],
   "exclude": [
-    "node_modules/*"
+    "node_modules/*",
+    "dist",
+    "test"
   ],
 }

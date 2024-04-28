@@ -26,3 +26,6 @@ data.json
 
 # bundled outputs 
 dist
+*.tgz
+
+.env

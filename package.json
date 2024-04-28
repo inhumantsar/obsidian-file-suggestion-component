@@ -2,9 +2,18 @@
 	"name": "obsidian-file-suggestion-component",
 	"version": "0.1.0",
 	"description": "Provides a popover fuzzy file and folder search helper for input fields in Obsidian.",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist/**/*",
+		"README.md",
+		"LICENSE"
+	],
 	"scripts": {
 		"build": "node esbuild.config.mjs production",
-		"test": "jest --ci"
+		"test": "jest --ci",
+		"prepublish": "tsc",
+		"release": "release-it"
 	},
 	"keywords": [
 		"file-suggestion",
@@ -29,6 +38,7 @@
 		"jest-ts-webcompat-resolver": "^1.0.0",
 		"jsdom": "^24.0.0",
 		"obsidian": "^1.5.7-1",
+		"release-it": "^17.2.1",
 		"ts-jest": "^29.1.2",
 		"tslib": "^2.6.2",
 		"typescript": "^5.4.5"
